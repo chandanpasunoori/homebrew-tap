@@ -10,7 +10,7 @@ class Kail < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/chandanpasunoori/kail/releases/download/v0.16.0/kail_0.16.0_darwin_arm64.tar.gz"
-      sha256 "8b754415c3fbf25aad5731911a10b9bacc13de88055a1615538ed0775ae3325e"
+      sha256 "7dccdfffebd2b5917a1335109bf05b6268979803193ed9be1aadd8a91452c75b"
 
       def install
         bin.install "kail"
@@ -18,7 +18,7 @@ class Kail < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/chandanpasunoori/kail/releases/download/v0.16.0/kail_0.16.0_darwin_amd64v2.tar.gz"
-      sha256 "56c1f8a1cb4e46541b7211118d81effe28a3b6ee0d970d35cf67d3a92c1bb538"
+      sha256 "d3d41ddd700cd99daede4b01080550493def12f26b8954be9e22566073359756"
 
       def install
         bin.install "kail"
@@ -29,7 +29,7 @@ class Kail < Formula
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/chandanpasunoori/kail/releases/download/v0.16.0/kail_0.16.0_linux_armv6.tar.gz"
-      sha256 "d4231c9e3974817295a6716afa17c678349690ef30fc21c2451c753fb11923fc"
+      sha256 "39db21d922358d856499aac5bca25222637e6e4d2d8f86f69f94053fe439de02"
 
       def install
         bin.install "kail"
@@ -37,7 +37,7 @@ class Kail < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/chandanpasunoori/kail/releases/download/v0.16.0/kail_0.16.0_linux_arm64.tar.gz"
-      sha256 "3776c7581433bb1809909ae0727e767c995fff5310ef55f4ed0ad388e49385d1"
+      sha256 "29e60df9f1086dcb474b416a25fac80aa5065221cbf8d9c8f8ede6d54ac5901b"
 
       def install
         bin.install "kail"
@@ -45,7 +45,7 @@ class Kail < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/chandanpasunoori/kail/releases/download/v0.16.0/kail_0.16.0_linux_amd64v2.tar.gz"
-      sha256 "33149f1e98b3843127c53e3a8f28adc6614f6085132be703ea799a55b214788e"
+      sha256 "3b20ddc5e3b91ee03bd36d6f2473305ed9243e974d0a7a609f58d30a68b803f1"
 
       def install
         bin.install "kail"
