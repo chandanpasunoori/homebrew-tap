@@ -5,20 +5,20 @@
 class Kail < Formula
   desc "kubernetes tail - pod log viewer"
   homepage "https://github.com/chandanpasunoori/kail"
-  version "0.16.0"
+  version "0.17.4"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/chandanpasunoori/kail/releases/download/v0.16.0/kail_0.16.0_darwin_arm64.tar.gz"
-      sha256 "5444e6c5f8fbe69a3ea5493d91277826cce7fd7a2504e21598d02591e8281513"
+      url "https://github.com/boz/kail/releases/download/v0.17.4/kail_v0.17.4_darwin_arm64.tar.gz"
+      sha256 "61c331113e3cdc40133f4b5f7a200862e281c23af3f6017bb71a71bae83b0caa"
 
       def install
         bin.install "kail"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/chandanpasunoori/kail/releases/download/v0.16.0/kail_0.16.0_darwin_amd64v2.tar.gz"
-      sha256 "4f4da835bbd6d47f6dd5519eab7030eb03e6831752c22747e54dd87b6adf2b8b"
+      url "https://github.com/boz/kail/releases/download/v0.17.4/kail_v0.17.4_darwin_amd64v2.tar.gz"
+      sha256 "88f2f514760312d2f029e69e733575b65563c08f38f6e238f1f2bcc7f57fd661"
 
       def install
         bin.install "kail"
@@ -27,25 +27,17 @@ class Kail < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/chandanpasunoori/kail/releases/download/v0.16.0/kail_0.16.0_linux_armv6.tar.gz"
-      sha256 "deafa81552a3eec675296eaa33ac8f05e1810d5ce96579b1a52f34d77d915af2"
-
-      def install
-        bin.install "kail"
-      end
-    end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chandanpasunoori/kail/releases/download/v0.16.0/kail_0.16.0_linux_arm64.tar.gz"
-      sha256 "f272611be5de6a49cb82e1b28478dc1f875b540020bb82ef7c3915bebbd659c8"
+      url "https://github.com/boz/kail/releases/download/v0.17.4/kail_v0.17.4_linux_arm64.tar.gz"
+      sha256 "c29c6e69b2ed1a8d8ae1ce00bf5857d2984c820c5c3b83bac9b9f04bc4b372d3"
 
       def install
         bin.install "kail"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/chandanpasunoori/kail/releases/download/v0.16.0/kail_0.16.0_linux_amd64v2.tar.gz"
-      sha256 "a40732049ef139249d7a508c196d86ebc265ad99a376c004adbdc142e4ca46a8"
+      url "https://github.com/boz/kail/releases/download/v0.17.4/kail_v0.17.4_linux_amd64v2.tar.gz"
+      sha256 "aebdf0401a46b26189eeec2cdd8539675805fcfa68a4561c9ae1993f275c3358"
 
       def install
         bin.install "kail"
