@@ -19,3 +19,4 @@ Package|Description
 [jaggr](https://github.com/chandanpasunoori/jaggr)|JSON Aggregation CLI
 [curlie](https://github.com/chandanpasunoori/curlie)|The power of curl, the ease of use of httpie
 [dnstrace](https://github.com/chandanpasunoori/dnstrace)|DNS resolution tracing tool
+[version](https://github.com/chandanpasunoori/version)|Git version tag generator CLI
