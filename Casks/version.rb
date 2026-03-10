@@ -3,7 +3,7 @@ cask "version" do
   name "version"
   desc "Git version tag generator CLI"
   homepage "https://github.com/chandanpasunoori/version"
-  version "0.1.2"
+  version "0.1.3"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "version" do
   on_macos do
     on_intel do
       url "https://github.com/chandanpasunoori/version/releases/download/v#{version}/version_darwin_amd64.tar.gz"
-      sha256 "35813a98b74d9926fc7b9bbcf3124b10af77b463ccd83e1331f596a8deef9759"
+      sha256 "f62047fa1fb4d69806ba80a8e3d1fd38fcc746197c772811f440dc2543c5246f"
     end
     on_arm do
       url "https://github.com/chandanpasunoori/version/releases/download/v#{version}/version_darwin_arm64.tar.gz"
-      sha256 "b89a5b1ccee02876b24adf744cee674b7747614d85d43195d6dc0c4d6b89fff6"
+      sha256 "b7c6d6dd7ba2a1d6c8c977132575105cfa9a28b52eade96dbd68a3d4733ea368"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/chandanpasunoori/version/releases/download/v#{version}/version_linux_amd64.tar.gz"
-      sha256 "c7c1db2714dea2d9abada0db0cebd493a4b8fb4c4ea6641cd33ac4b48b2e3611"
+      sha256 "d321a4b1ba124765ade89ac3d9bf619254c3b37cc01ca0ac13b4097d3ccd57d8"
     end
     on_arm do
       url "https://github.com/chandanpasunoori/version/releases/download/v#{version}/version_linux_arm64.tar.gz"
-      sha256 "0b79d8ad7baa054527d5ec24db008d254c768c10bcc412ba3b386748fb87203b"
+      sha256 "b6743b59b7a93c1ff11049b3daf18d45a55c79376c0245dd6d316506fe3770b6"
     end
   end
 
